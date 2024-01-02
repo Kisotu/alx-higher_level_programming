@@ -7,23 +7,18 @@
  */
 int check_cycle(listint_t *last)
 {
-	listint_t *curr, *prev;
+	listint_t *once = list;
+	listint_t *twice = list;
 
-	if(!list)
-	{
+	if (!list)
 		return (0);
-	}
-	curr = list;
-	prev = list->next;
 
-	while (prev && curr && prev->next)
+	while (once && twice && twice->next)
 	{
-		if (curr == prev)
-		{
+		once = once->next;
+		twice = twice->next->next;
+		if (once == twice)
 			return (1);
-		}
-		curr = curr->next;
-		prev = prev->next->next;
 	}
 	return (0);
 }
