@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-for i in range(100):
+for x in range(100):
     if x == 99:
         print(i)
     else:
