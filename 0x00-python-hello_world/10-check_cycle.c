@@ -5,7 +5,7 @@
  * @list: the list to check
  * Return: 1 if cycle exists, 0 if it doesn't
  */
-int check_cycle(listint_t *last)
+int check_cycle(listint_t *list)
 {
 	listint_t *once = list;
 	listint_t *twice = list;
