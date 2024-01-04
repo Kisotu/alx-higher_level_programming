@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 
-import operator
-
 def magic_calculation(a, b):
+    from magic_calculation_102 import add, sub
+
     if a < b:
-        c = operator.add(a, b)
-        for i in range(4, 6):
-            c = operator.add(c, i)
+        c = add(a, b)
+        for k in range(4, 6):
+            c = add(c, k)
         return (c)
     
     else:
-        return (operator.sub(a, b))
+        return (sub(a, b))
