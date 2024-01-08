@@ -12,7 +12,7 @@ int is_palindrome(listint_t **head)
 	if (*head == NULL || (*head)->next == NULL)
 		return (1);
 
-	while(1)
+	while (1)
 	{
 		twice = twice->next->next;
 		if (!twice)
@@ -30,7 +30,7 @@ int is_palindrome(listint_t **head)
 
 	reverse_listint(&dupl);
 
-	while(dupl && tempo)
+	while (dupl && tempo)
 	{
 		if (tempo->n == dupl->n)
 		{
