@@ -2,6 +2,11 @@
 #include <Python.h>
 #include <listobject.h>
 
+/**
+ * print_python_list_info - func that prints basic info abt python lists
+ * @p: python list
+ * Return: nothing
+ */
 void print_python_list_info(PyObject *p)
 {
 	int k;
