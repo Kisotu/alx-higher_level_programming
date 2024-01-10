@@ -4,6 +4,6 @@ def number_keys(a_dictionary):
     dict_keys = list(a.dictionary.keys())
 
     for k in dict_keys:
-        numb += 1
+        numb += k
 
     return numb
