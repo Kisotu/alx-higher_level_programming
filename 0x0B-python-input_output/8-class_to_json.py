@@ -3,5 +3,6 @@
 
 
 def class_to_json(obj):
-    '''Return the dictionary description of a simple data structure'''
+    '''Return the dictionary description of a simple data structure
+    for JOSN serialization of obj'''
     return obj.__dict__
